@@ -1,0 +1,24 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="desafio">
+  <!-- Preencha a tag com oseu nome e idade - usando Interpolação-->
+  <p> Usando VueJs - {{ nome }} ({{ idade }})</p>
+
+  <!-- Exiba sua idade multiplicada por 3-->
+  <p> Minha idade por 3 = {{ idadeVezes3() }}</p>
+
+  <!-- Chamar uma função para exibir um número randomico entre 0 e 1 -->
+  <p> {{ random() }}</p>
+
+  <!-- Exiba uma imagem na tag img fazendo binding no atributo "src"-->
+  <div>
+    <img v-bind:src="imagem" height="200">
+  </div>
+
+  <!-- Inicialize o input com o seu nome (usando o atributo "value")-->
+  <div>
+    <input type="text" v-bind:value="nome">
+  </div>
+</div>
+
+<script src="app.js"></script>
