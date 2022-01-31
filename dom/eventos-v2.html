@@ -9,6 +9,8 @@
     <span v-on:mousemove="pararEvento"> PARAR AQUI</span>
   </p>
   <a v-on:click="naoNavegar" href="http://google.com"> Google</a>
+  <hr>
+  <input type="text" v-on:keyup.enter="exibirAlerta">
 </div>
 
 <script>
@@ -30,6 +32,9 @@
       atualizarXY(event) {
         this.x = event.clientX
         this.y = event.clientY
+      },
+      exibirAlerta() {
+        alert('Estou te alertando!')
       },
       pararEvento(e) {
         e.stopPropagation()
